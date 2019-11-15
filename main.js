@@ -11,14 +11,17 @@ let modalText = document.getElementById('text')
 modal.style.display = "none"
 heading.innerHTML = "LEVEL : 1"
 
+//Creating Game Grid for level 1
 createGrid(4, icons0, "140px", "140px");
 
+//creating Grid for level 2
 function level2() {
   createGrid(16, icons4, "280px", "280px");
   cont3.style.height = "280px"
   heading.innerHTML = "LEVEL : 2"
 }
 
+//Creating Grid for level 3
 function level3() {
   createGrid(100, icons2, "700px", "700px");
   cont3.style.height = "700px"
@@ -148,6 +151,7 @@ function check() {
   }
 }
 
+//Creating Game Grid
 function createGrid(lvl, iconsLvl, width, height) {
 
   container.style.width = width;
@@ -180,7 +184,6 @@ function addClicks() {
   }
 }
 
-
 let cont3 = document.getElementsByClassName('cont3')[0];
 let cont2 = document.getElementsByClassName('cont2')[0];
 cont3.style.height = "140px"
@@ -188,7 +191,7 @@ let time = 0;
 
 let loop1 = setInterval(timer1, 1000)
 
-//timer for level1
+//logic for elapsed time for level1
 function timer1() {
 
   cont2.style.height = time + 28 + "px";
@@ -229,7 +232,7 @@ function timer1() {
   }
 }
 
-//timer for level2
+//logic for elapsed time for level2
 function timer2() {
   cont2.style.height = time + 4 + "px";
   time = time + 4;
@@ -275,7 +278,7 @@ function timer2() {
   }
 }
 
-//timer for level3
+//logic for elapsed time for level3
 function timer3() {
   cont2.style.height = time + 4 + "px";
   time = time + 4;
@@ -322,6 +325,7 @@ function timer3() {
   }
 }
 
+//Reseting icons in default positions at start over
 function startOver() {
   counter = 0;
   for (var k = 0; k < clicked2.length; k++) {
