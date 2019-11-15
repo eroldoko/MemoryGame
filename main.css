@@ -50,7 +50,6 @@ h1 {
   color: white;
   font-size: 30px;
   transform: perspective(900px) rotateY(-180deg);
-  /*zasto minus  ?*/
   backface-visibility: hidden;
   transition: transform .7s;
 }
