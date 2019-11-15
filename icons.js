@@ -103,10 +103,6 @@ let icons1= [
   '<i class="fab fa-bitcoin"></i>',
   '<i class="fas fa-bomb"></i>',
   '<i class="fas fa-box-open"></i>'
-
-
-
-
 ];
 
 let icons2 = [
